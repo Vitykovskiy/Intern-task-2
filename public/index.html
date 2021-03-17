@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Intern task</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="modal" id="modal">
+    <div class="modal__content" id="modal-content">
+        <div class="modal__text" id="modal-text"></div>
+        <button class="modal__button" id="modal-button">Sign up again</button>
+    </div>
+
+</div>
+<form class="form" id="form" method="post">
+    <div class="form__header">
+        Sign up
+    </div>
+    <div class="form__content">
+        <div class="row">
+            <div class="form__item" id="form-fname">
+                <input class="form__text-input" type="text" name="fname" id="fname" required>
+                <label class="form__float-label" for="fname">First name</label>
+                <div class="error-container" id="error-fname">
+                </div>
+            </div>
+
+            <div class="form__item" id="form-lname">
+                <input class="form__text-input" type="text" name="lname" id="lname" required>
+                <label class="form__float-label" for="lname">Last name</label>
+                <div class="error-container" id="error-lname"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form__item" id="form-gender">
+                <div class="form__gender">
+                    <label class="form__describe-label" for="gender-list">Gender</label>
+                    <div class="form__gender-list" id="gender-list">
+                        <input class="form__radio--pink" type="radio" name="gender" id="male"
+                               value="male" required>
+                        <label class="form__gender-label" for="male">Male</label>
+                        <input class="form__radio--pink" type="radio" name="gender" id="female"
+                               value="female" required>
+                        <label class="form__gender-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="error-container" id="error-gender"></div>
+            </div>
+            <div class="form__item" id="form-age">
+                <div class="form__age">
+                    <label class="form__describe-label" for="age">Age</label>
+                    <input class="form__age-input" name="age" type="number" id="age" min="10" max="100">
+                </div>
+                <div class="error-container" id="error-age"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form__item">
+                <div class="form__email" id="form-email">
+                    <input class="form__text-input" name="email" type="email" id="email" required>
+                    <label class="form__over-text-label" for="email">Email</label>
+                </div>
+                <div class="error-container" id="error-email"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form__item">
+                <div class="form__password">
+                    <input class="form__text-input" name="password" type="password" id="password" required>
+                    <label class="form__float-label" for="password">Password</label>
+                </div>
+                <div class="error-container" id="error-password"></div>
+            </div>
+            <div class="form__item">
+                <div class="form__password">
+                    <input class="form__text-input" name="confirm-password" type="password" id="confirm-password"
+                           required>
+                    <label class="form__float-label" for="confirm-password">Confirm Password</label>
+                </div>
+                <div class="error-container" id="error-confirm-password"></div>
+            </div>
+        </div>
+        <div class="error-container" id="error-form">
+        </div>
+    </div>
+
+    <div class="form__submit">
+        <button class="form__submit-button">Sign up</button>
+    </div>
+</form>
+<script src="scripts/script.js"></script>
+</body>
+</html>
